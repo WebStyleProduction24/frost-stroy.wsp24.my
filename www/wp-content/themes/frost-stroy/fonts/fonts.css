@@ -1,0 +1,71 @@
+@font-face {
+    font-family: UBUNTU;
+    src: url(UBUNTU-BI.eot);
+    src: url(UBUNTU-BI.eot?#iefix) format("embedded-opentype"), url(UBUNTU-BI.woff) format("woff"), url(UBUNTU-BI.ttf) format("truetype");
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: UBUNTU;
+    src: url(UBUNTU-MI.eot);
+    src: url(UBUNTU-MI.eot?#iefix) format("embedded-opentype"), url(UBUNTU-MI.woff) format("woff"), url(UBUNTU-MI.ttf) format("truetype");
+    font-weight: 500;
+    font-style: italic
+}
+
+@font-face {
+    font-family: UBUNTU;
+    src: url(UBUNTU-RI.eot);
+    src: url(UBUNTU-RI.eot?#iefix) format("embedded-opentype"), url(UBUNTU-RI.woff) format("woff"), url(UBUNTU-RI.ttf) format("truetype");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: UBUNTU;
+    src: url(UBUNTU-LI.eot);
+    src: url(UBUNTU-LI.eot?#iefix) format("embedded-opentype"), url(UBUNTU-LI.woff) format("woff"), url(UBUNTU-LI.ttf) format("truetype");
+    font-weight: 300;
+    font-style: italic
+}
+
+@font-face {
+    font-family: UBUNTU;
+    src: url(UBUNTU-L.eot);
+    src: url(UBUNTU-L.eot?#iefix) format("embedded-opentype"), url(UBUNTU-L.woff) format("woff"), url(UBUNTU-L.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: UBUNTU;
+    src: url(UBUNTU-R.eot);
+    src: url(UBUNTU-R.eot?#iefix) format("embedded-opentype"), url(UBUNTU-R.woff) format("woff"), url(UBUNTU-R.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: UBUNTU;
+    src: url(UBUNTU-M.eot);
+    src: url(UBUNTU-M.eot?#iefix) format("embedded-opentype"), url(UBUNTU-M.woff) format("woff"), url(UBUNTU-M.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: UBUNTU;
+    src: url(UBUNTU-B.eot);
+    src: url(UBUNTU-B.eot?#iefix) format("embedded-opentype"), url(UBUNTU-B.woff) format("woff"), url(UBUNTU-B.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: PFCENTR;
+    src: url(PFCENTROSLABPROBOLD.eot);
+    src: url(PFCENTROSLABPROBOLD.eot?#iefix) format("embedded-opentype"), url(PFCENTROSLABPROBOLD.woff) format("woff"), url(PFCENTROSLABPROBOLD.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
