@@ -1,36 +1,3 @@
-.header-blog {
-    background: url(../images/1.png) repeat-x !important;
-    height: 65px;
-    color: #fff;
-    padding-top: 15px;
-}
-
-.header-blog a {
-    color: #fff;
-}
-
-.content-blog {
-    width: 1140px;
-    margin: 0 auto;
-}
-
-.logo-blog, nav li {
-    float: left;
-}
-.logo-blog{
-    font-size: 34px;
-    font-weight: 700;
-    margin-top: -15px;
-}
-
-.header-blog nav {
-     float: right;
-}
-
-
-
-/*-----------------*/
-
 .main-header {
     position: relative;
     float: left;
@@ -38,7 +5,7 @@
     z-index: 99;
 }
 
-.main-navigation {
+.blog .main-navigation {
     display: block;
     width: 100%;
     margin-top: -1px;
@@ -49,7 +16,7 @@
     background: url(../images/mm-bkg.png) repeat-x !important;
 }
 
-.main-navigation #navigation {
+.blog .main-navigation #navigation {
     width: 1060px;
     clear: both;
     margin: 0 auto;
@@ -57,13 +24,107 @@
     max-width: 95%;
 }
 
-#logo-blog {
-    color: #fff;
+.blog #logo {
     float: left;
     margin-bottom: 0;
     padding-top: 5px;
     line-height: 40px;
     font-size: 34px;
+    text-transform: none !important;
+    color: #fff;
+}
+
+.blog #logo a:visited, .blog #logo a {
+    color: #fff;
+}
+
+
+.blog h1, .blog h2, .blog h3, .blog h4, .blog h5, .blog h6 {
     font-weight: bold;
+    margin-bottom: 12px;
     font-family: 'Gudea', sans-serif;
+    color: #555;
+}
+
+.blog h1 {
+    margin: 0;
+}
+
+.blog #navigation ul {
+    margin: 0 auto;
+    position: relative;
+    max-width: 100%;
+    float: right;
+}
+
+.blog #navigation ul li {
+    float: left;
+    position: relative;
+}
+
+.blog #navigation ul li a, .blog #navigation ul li a:link, .blog #navigation ul li a:visited {
+    overflow: hidden;
+    display: block;
+}
+
+.blog .main-navigation #navigation ul li a {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.blog #navigation > ul > li > a {
+    font-weight: normal;
+}
+
+.blog #navigation a {
+    font-family: 'Dosis', sans-serif;
+}
+
+.blog .main-navigation li a {
+    font-size: 14px;
+    line-height: 1.2em;
+    padding: 17px 26px 5px 0;
+    color: #989898;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.blog .secondary-navigation {
+    display: block;
+    margin: 0 auto;
+    width: 1060px;
+    clear: both;
+    height: 50px;
+    max-width: 95%;
+    margin-top: 10px;
+}
+
+.blog #navigation {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.blog .secondary-navigation #navigation ul {
+    padding-left: 0;
+    float: left;
+    padding-top: 8px;
+    width: 100%;
+}
+
+.blog .secondary-navigation li a {
+    line-height: 14px;
+    color: #666666;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 22px;
+    font-size: 16px;
+    padding-bottom: 14px;
+    padding-left: 0;
+    padding-right: 30px;
+}
+
+.main-container {
+    width: 1060px;
+    margin: 0 auto;
 }

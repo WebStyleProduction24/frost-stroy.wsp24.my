@@ -10,29 +10,30 @@ Template Name: Блог
 
 <?php get_header(); ?>
 
-<header class="main-header">
+<header class="main-header blog">
 		<div class="main-navigation">
 			<nav id="navigation">
-				<h1 class="logo-blog">
-					<a htef="#">Строй-Фрост</a>
+				<h1 id="logo">
+					<a href="<?php echo home_url();?>" target="_blank"><?php echo get_bloginfo('name');?></a>
 				</h1>
-			</nav>
-			<div class="logo">
-				<a htef="#">Строй-Фрост</a>
-			</div>
-			 <?php wp_nav_menu(array(
+				<?php wp_nav_menu(array(
                 	'theme_location' => 'blog',
-                	'container'       => 'nav',
+                	'container'       => false
                 	 ));?>
+			</nav>
+		</div>
+		<div class="secondary-navigation">
+			<nav id="navigation">
+				<?php wp_nav_menu(array(
+                	'theme_location' => 'blog',
+                	'container'       => false
+                	 ));?>
+			</nav>
 		</div>
 	</header>
 
-<main>
+<main class="main-container"> 
 		<div class="content-blog">
-			 <?php wp_nav_menu(array(
-                	'theme_location' => 'blog',
-                	'container'       => 'nav',
-                	 ));?>
             <div class="block-content">
 				<div class="text-content">
 
