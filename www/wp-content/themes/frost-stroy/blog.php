@@ -2,9 +2,6 @@
 
 Template Name: Блог
 
-
-
-
 */?>
 
 
@@ -31,6 +28,21 @@ Template Name: Блог
 			</nav>
 		</div>
 	</header>
+
+<main class="main-container blog">
+	<div id="page">
+		<div class="content">
+			<?php
+				if (have_posts()):
+					while (have_posts()): the_post();
+						the_content();
+					endwhile;
+				endif;
+			?>
+		</div>
+		<div class="sidebar"></div>
+	</div>
+</main>
 
 <main class="main-container"> 
 		<div class="content-blog">

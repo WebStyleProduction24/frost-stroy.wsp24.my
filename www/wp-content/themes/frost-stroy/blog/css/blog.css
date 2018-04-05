@@ -128,3 +128,16 @@
     width: 1060px;
     margin: 0 auto;
 }
+
+.blog #page {
+    padding-top: 17px;
+    min-height: 100px;
+    float: none;
+    clear: both;    
+    max-width: 100%;
+    min-width: 240px;
+    overflow: visible;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
