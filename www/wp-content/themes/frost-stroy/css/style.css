@@ -95,7 +95,7 @@ h1 {
     float: left;
 }
 
-.nav ul {
+.nav ul, .left a {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -117,7 +117,7 @@ h1 {
     width: 600px
 }
 
-.nav a {
+.nav a, .left a {
     color: #3b3273;
     -webkit-transition: all .2s;
     -o-transition: all .2s;
@@ -125,7 +125,10 @@ h1 {
     transition: all .2s
 }
 
-.nav a:hover {
+.left a:visited {
+    color: #3b3273;
+}
+.nav a:hover, .left a:hover {
     color: #00b95e
 }
 

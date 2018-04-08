@@ -10,3 +10,6 @@ Description: Индивидуальный шаблон
 Version: 4.0
 */ 
 
+.logo {
+	width: 100%;
+}

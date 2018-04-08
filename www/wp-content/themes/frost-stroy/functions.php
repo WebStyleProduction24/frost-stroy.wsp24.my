@@ -34,4 +34,6 @@ register_nav_menus(array(
 	'bottom' => 'Нижнее меню'
 ));
 
+add_theme_support( 'custom-logo' );
+
 ?>
