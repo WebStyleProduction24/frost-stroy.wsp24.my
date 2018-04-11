@@ -14,3 +14,27 @@ Version: 4.0
 	width: 100%;
 	padding-left: 15px !important;
 }
+
+.video {
+	position: relative;
+}
+
+video {
+	width: 100%;
+}
+
+.video a .video-link {
+	display: none;  
+    position: absolute;
+    top: 50%;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+video:hover + .video-link {
+	display: block;
+}

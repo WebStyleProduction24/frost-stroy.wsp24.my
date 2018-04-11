@@ -22,8 +22,6 @@ function my_scripts_method() {
     wp_deregister_script( 'jquery' );
     wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js');
     wp_enqueue_script( 'jquery' );
-    wp_register_script( 'custom.bundle', get_stylesheet_directory_uri().'/js/custom.bundle.js');
-    wp_enqueue_script( 'custom.bundle' );
 }    
  
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
