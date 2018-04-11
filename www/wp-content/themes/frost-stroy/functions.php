@@ -36,4 +36,92 @@ register_nav_menus(array(
 
 add_theme_support( 'custom-logo' );
 
+// ------------------------------------------------------------------
+// Вешаем все блоки, поля и опции на хук admin_init
+// ------------------------------------------------------------------
+//
+add_action( 'admin_init', 'eg_settings_api_init' );
+function eg_settings_api_init() {
+	// Добавляем блок опций на базовую страницу "Общие"
+	add_settings_section(
+		'eg_setting_section', // секция
+		'Дополнительные пользовательские настройки',
+		'eg_setting_section_callback_function',
+		'general' // страница
+	);
+
+	// Добавляем поля опций. Указываем название, описание, 
+	// функцию выводящую html код поля опции.
+	add_settings_field(
+		'eg_setting_name',
+		'Номер телефона',
+		'eg_setting_callback_function', // можно указать ''
+		'general', // страница
+		'eg_setting_section' // секция
+	);
+	add_settings_field(
+		'eg_setting_name2',
+		'График работы',
+		'eg_setting_callback_function2',
+		'general', // страница
+		'eg_setting_section' // секция
+	);
+
+	// Регистрируем опции, чтобы они сохранялись при отправке 
+	// $_POST параметров и чтобы callback функции опций выводили их значение.
+	register_setting( 'general', 'eg_setting_name' );
+	register_setting( 'general', 'eg_setting_name2' );
+}
+
+// ------------------------------------------------------------------
+// Сallback функция для секции
+// ------------------------------------------------------------------
+//
+// Функция срабатывает в начале секции, если не нужно выводить 
+// никакой текст или делать что-то еще до того как выводить опции, 
+// то функцию можно не использовать для этого укажите '' в третьем 
+// параметре add_settings_section
+//
+function eg_setting_section_callback_function() {
+	echo '<p>Вывод данных в шапке сайта</p>';
+}
+
+// ------------------------------------------------------------------
+// Callback функции выводящие HTML код опций
+// ------------------------------------------------------------------
+//
+// Создаем text input теги
+//
+function eg_setting_callback_function() {
+	echo '<input 
+		name="eg_setting_name" 
+		type="text"
+		placeholder="+7 (800) 800-00-00" 
+		value="' . get_option( 'eg_setting_name' ) . '"
+		value="1" 
+		class="code" 
+	/>';
+}
+function eg_setting_callback_function2() {
+	echo '<input 
+		name="eg_setting_name2"  
+		type="text"
+		placeholder="ПН—ПТ, 9:00-22:00" 
+		value="' . get_option( 'eg_setting_name2' ) . '" 
+		class="code2"
+	 />';
+}
+
+//Перевод телефона из шапки в кликабельность для ссылки
+
+function tel() {
+	$tel = get_option( 'eg_setting_name' );
+	$tel = str_replace(' ', '', $tel);
+	$tel = str_replace('-', '', $tel);
+	$tel = str_replace('(', '', $tel);
+	$tel = str_replace(')', '', $tel);
+	echo $tel;
+}
+
+
 ?>
