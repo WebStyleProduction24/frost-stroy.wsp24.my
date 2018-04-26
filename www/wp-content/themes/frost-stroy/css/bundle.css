@@ -2128,7 +2128,7 @@ main .content > div {
     position: relative;
     color: #3b3273
 }
-
+/*
 .footer__logo a:before {
     content: '';
     position: absolute;
@@ -2138,15 +2138,15 @@ main .content > div {
     height: 0;
     border-bottom: 1px dotted #3b3273
 }
-
+*/
 .footer__logo a:hover {
     color: #00b95e
 }
-
+/*
 .footer__logo a:hover:before {
     background-color: #00b95e
 }
-
+*/
 .footer__blog {
     width: 310px
 }
