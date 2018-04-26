@@ -46,3 +46,10 @@ footer li {
 	list-style-type: none;
 	padding: 2px 0;
 }
+
+@media (min-width: 768px){
+    .vc_col-sm-4 {
+        width: 32.3% !important;
+        
+    }
+}
