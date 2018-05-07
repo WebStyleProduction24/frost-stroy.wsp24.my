@@ -10,3 +10,46 @@ Description: Индивидуальный шаблон
 Version: 4.0
 */ 
 
+.logo {
+	width: 100%;
+	padding-left: 15px !important;
+	padding-bottom: 5px !important;
+	font-size: 27px;
+	color: #00b95e !important;
+}
+
+.video {
+	position: relative;
+}
+
+video {
+	width: 100%;
+}
+
+.video a .video-link {
+	display: none;  
+    position: absolute;
+    top: 50%;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+video:hover + .video-link {
+	display: block;
+}
+
+footer li {
+	list-style-type: none;
+	padding: 2px 0;
+}
+
+@media (min-width: 768px){
+    .vc_col-sm-4 {
+        width: 32.3% !important;
+        
+    }
+}

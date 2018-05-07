@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<title><?php echo wp_get_document_title(); ?></title>
-		<?php wp_head(); ?>
+	<?php wp_head(); ?>
+	
 </head>
 
 <body>
