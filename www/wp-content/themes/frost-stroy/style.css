@@ -18,6 +18,12 @@ Version: 4.0
 	color: #00b95e !important;
 }
 
+.wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid>li {
+	width: calc(100%/3 - 40px);
+	float: left;
+	margin: 0 20px;
+}
+
 .video {
 	position: relative;
 }
@@ -52,4 +58,114 @@ footer li {
         width: 32.3% !important;
         
     }
+}
+
+
+@media screen and (max-width: 1024px) {
+
+}
+
+/* Стили для экранов 600px и меньше */
+@media screen and (max-width: 768px) {
+
+}
+
+/*Стили для экранов 515px и меньше*/
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Смартфоны */
+@media only screen and (max-width : 320px) {
+	.footer__left, .footer__logo, .footer__socials, .footer__wrap, .header-land .content, .header-land .left {
+		width: 100% !important;
+		display: block !important;
+	}
+	.footer__socials {
+		margin: 0 auto;
+		width: 65% !important;
+	}
+
+	.footer__socials a {
+		float: left !important;
+		margin: 5px;
+	}
+
+	.footer__blog {
+		display: none;
+	}
+
+	footer > div > div {
+		margin: 0 auto;
+		float: none;
+	}
+
+	.footer__right {
+		text-align: center;
+		font-size: 10px;
+		width: 100% !important;
+	}
+	h1 {
+		font-size: 23px !important;
+		padding-left: 5px !important;
+	}
+
+	.wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid>li {
+		width: calc(100%/2 - 10px);
+		margin: 0 5px;
+		font-size: 10px;
+		text-align: center;
+		margin-bottom: 0px !important;
+	}
+
+	.wpb_wrapper p, .header-land {
+		height: auto !important;
+	}
+
+	.logo {
+		width: 150px! important;
+	}
+
+	.custom-logo-link {
+		float: left;
+	}
+
+	.header-land .nav {
+		clear: both;
+	}
+
+	.header-land .nav ul {
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.header-land .nav li {
+		margin: 0 auto;
+	}
+	.header-land .logo {
+		font-size: 25px;
+	}
+
+	.content {
+		position: relative;
+		padding: 10px;
+	}
+
+	.header-land .tel {
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding-top: 10px;
+		padding-right: 10px;
+	}
+
+	.header-land .tel a {
+		font-size: 14px;
+	}
+
+	.vc_column_container>.vc_column-inner {
+		padding-right: 5px !important;
+		padding-left: 5px !important;
+	}
+ 
 }
