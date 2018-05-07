@@ -54,29 +54,47 @@ footer li {
 }
 
 @media (min-width: 768px){
-    .vc_col-sm-4 {
-        width: 32.3% !important;
-        
-    }
 }
 
 
 @media screen and (max-width: 1024px) {
 
+	.content {
+		padding: 10px;		
+	}
+
+	h1 {
+		font-size: 50px !important;
+	}
+
+
 }
 
-/* Стили для экранов 600px и меньше */
+/* Стили для экранов 768px и меньше */
 @media screen and (max-width: 768px) {
+    .vc_col-sm-4 {
+        width: 32.3% !important;
+        
+    }
+	.footer__blog {
+		width: 175px !important;
+	}
 
+	h1 {
+		font-size: 40px !important;
+	}
+
+	.nav ul {
+		width: 360px !important;
+	}
+
+	.left {
+		width: 570px !important;
+	}
 }
 
-/*Стили для экранов 515px и меньше*/
+/*Стили для экранов 480px и меньше*/
 @media only screen and (max-width : 480px) {
-
-}
-
-/* Смартфоны */
-@media only screen and (max-width : 320px) {
 	.footer__left, .footer__logo, .footer__socials, .footer__wrap, .header-land .content, .header-land .left {
 		width: 100% !important;
 		display: block !important;
@@ -148,7 +166,6 @@ footer li {
 
 	.content {
 		position: relative;
-		padding: 10px;
 	}
 
 	.header-land .tel {
