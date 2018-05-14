@@ -30,11 +30,6 @@
     $('.video_id').on('canplay', function () {
         $(this).attr('poster', '');
     });
-
-    // var vid = document.getElementById("video_id");
-    // vid.oncanplay = function() {
-    //     alert("Can start playing video");
-    // };
     $("body").on("mouseover", "video", function(){
         this.play();
         $( this ).css( "background-color", "black" );
