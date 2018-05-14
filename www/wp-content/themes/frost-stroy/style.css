@@ -10,6 +10,11 @@ Description: Индивидуальный шаблон
 Version: 4.0
 */ 
 
+video.loading {
+  background: black url(/wp-content/uploads/2018/05/3-1.jpg) center center no-repeat;
+}
+
+
 .logo {
 	width: 100%;
 	padding-left: 15px !important;
