@@ -14,6 +14,11 @@ video.loading {
   background: black url(/wp-content/uploads/2018/05/3-1.jpg) center center no-repeat;
 }
 
+.img-video {
+	display: none;
+	width: 100%;
+}
+
 
 .logo {
 	width: 100%;
@@ -189,5 +194,11 @@ footer li {
 		padding-right: 5px !important;
 		padding-left: 5px !important;
 	}
- 
+
+	video {
+		display: none !important;
+	}
+	.img-video {
+		display: block;
+	} 
 }
