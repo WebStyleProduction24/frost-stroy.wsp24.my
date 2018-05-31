@@ -13,6 +13,8 @@ function enqueue_styles() {
 	wp_enqueue_style( 'style-blog');
 	wp_register_style('blog', get_stylesheet_directory_uri().'/blog/css/blog.css');
 	wp_enqueue_style( 'blog');
+	wp_register_style('blog-css', get_stylesheet_directory_uri().'/css/blog.css');
+	wp_enqueue_style( 'blog-css');
 	wp_register_style('fonts', get_stylesheet_directory_uri().'/fonts/fonts.css');
 	wp_enqueue_style( 'fonts');
 }
@@ -22,13 +24,15 @@ function my_scripts_method() {
     wp_deregister_script( 'jquery' );
     wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js');
     wp_enqueue_script( 'jquery' );
+    wp_register_script( 'fix-menu', get_stylesheet_directory_uri().'/js/fix-menu.js');
+    wp_enqueue_script( 'fix-menu' );
 }    
  
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
 
 register_nav_menus(array(
 	'land'    => 'Верхнее меню ленда',
-	'blog'    => 'Верхнее меню блога',
+	'menu-section'    => 'Меню лендов',
 	'bottom' => 'Нижнее меню'
 ));
 
@@ -295,4 +299,15 @@ function tel() {
 }
 
 
-?>
+
+function register_my_widgets(){
+	register_sidebar( array(
+		'name' => "Сайдбар (боковая колонка)",
+		'id' => 'section-sidebar',
+		'description' => 'Эти виджеты будут показаны в боковой колонке сайта',
+		'before_title' => '<h4>',
+		'after_title' => '</h4>',
+		'before_widget' => ''
+	) );
+}
+add_action( 'widgets_init', 'register_my_widgets' );

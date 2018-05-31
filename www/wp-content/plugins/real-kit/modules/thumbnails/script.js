@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 
   var realkit_upload_thumb_button = $('.realkit_upload_thumb_button');
   if (realkit_upload_thumb_button.length) {
-    realkit_upload_thumb_button.on('click', function() {
+    realkit_upload_thumb_button.on('click', function(event) {
 
       var button = $(this), frame;
 

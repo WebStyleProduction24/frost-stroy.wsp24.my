@@ -4,8 +4,8 @@ Contributors: Realist
 Donate link:
 Tags: kit, real, real., real.kit, image, images, thumb, thumbnail, thumbnails, category, categories, taxonomy, taxonomies, admin, id, ids, reveal, post, page, media, user, l10n, translit, transliteration, slugs, russian, rustolat, cyrtolat, cyrillic, javascript, js, add, modal, modals, window, windows, views, views count, landing page, maintenance, набор, реалист, картинка, миниатюра, категории, рубрики, таксономии, метки, админ, пост, запись, страница, меди, пользователи, транслит, транслитерация, слаг, ярлык, русский, кириллица, модальные окна, просмотры, счетчик просмотров, лэндинг, целевая страница, сайт в разработке, ведутся работы
 Requires at least: 4.1.1
-Tested up to: 4.7
-Stable tag: 4.2.1
+Tested up to: 4.9
+Stable tag: 4.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -128,6 +128,14 @@ Like any other WordPress plugin.
 1. Все настройки на одной странице | All settings on one page
 
 == Changelog ==
+
+= 4.2.2 =
+
+* Мелкие правки.
+
+*Machine translation:*
+
+* Minor changes.
 
 = 4.2.1 =
 

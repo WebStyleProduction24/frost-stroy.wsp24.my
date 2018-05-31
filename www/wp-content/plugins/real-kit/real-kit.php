@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: real.Kit
-Version: 4.2.1
+Version: 4.2.2
 Plugin URI:
 Description: Набор дополнений и улучшений WordPress | <a target="_blank" href="https://wordpress.org/plugins/real-kit/">English Description.</a>
 Author: Realist
