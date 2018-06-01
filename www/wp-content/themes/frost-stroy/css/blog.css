@@ -5,7 +5,14 @@
 	width: 100%;
 	background-color: #fff;
 	z-index:10;
-	top:67px;
+}
+
+.main-blog {
+	position: relative;
+	top: 67px;
+	margin-bottom: 67px;
+	padding: 25px 0;
+	overflow: hidden;
 }
 
 .description {
@@ -19,4 +26,92 @@
 
 .section-menu {
 	text-transform: none;
+}
+
+.content-blog {
+	width: 80%;
+	float: left;
+	padding-right: 30px;
+}
+
+.sidebar .category {
+	margin-bottom: 20px;
+	color: #3b3273;
+}
+
+.sidebar .category p {
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.sidebar .category a{
+	font-size: 15px;
+	color: #3b3273;
+}
+
+.sidebar .category a:hover{
+	color: #00b95e;
+}
+
+.post-excerpt {
+	height: 250px;
+	position: relative;
+}
+
+.post-excerpt img {
+	width: 100%;
+}
+
+.title-post-nohover {
+	position: absolute;
+	bottom: 0;
+	padding: 15px;
+}
+
+.post-excerpt h1{
+	color: #fff;	
+	font-size: 30px;
+	margin: 0;	
+}
+
+.post-background {
+	background-color: rgba(0, 0, 0, .25);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+
+.post-blog {
+	width: 50%;
+}
+
+.post-blog:hover .title-post-nohover {
+	display: none;
+}
+.post-hover {
+	display: none;
+}
+
+
+.post-blog:hover .post-hover {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .5);
+	width: 100%;
+	height: 100%;
+	display: table;
+	z-index: 1;
+	border: #3b3273 3px solid;
+}
+
+.text-post-hover {
+	display: table-cell;
+	vertical-align: bottom;
+	color: #fff;
+	padding: 15px;
+}
+.post-excerpt-hover {
+	font-size: 12px;
 }

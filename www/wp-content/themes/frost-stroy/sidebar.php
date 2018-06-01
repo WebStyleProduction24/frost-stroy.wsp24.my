@@ -1,10 +1,15 @@
-<?php wp_nav_menu(array(
-	'theme_location' => 'menu-section',
-	'container'       => 'nav',
-	'container_class' => 'section-menu'
-));
+	<div class="category">
+		<p>Категории</p>
 
+		<?php wp_list_categories( array(
+			'style'              => 'none',
+			'exclude'            => '1',
+		) ); ?>
 
-if ( function_exists('dynamic_sidebar') )
-	dynamic_sidebar('section-sidebar');
-?>
+	</div>
+
+	<?php
+
+	if ( function_exists('dynamic_sidebar') )
+		dynamic_sidebar('section-sidebar');
+	?>
