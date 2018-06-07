@@ -12,7 +12,10 @@
 			endif;
 			?>
 		</div>
-		<div class="sidebar"><?php echo get_sidebar(); ?></div>
+		<div class="sidebar">
+			<?php echo get_sidebar('category'); ?>			
+			<?php echo get_sidebar(); ?>
+		</div>
 	</div>
 </main>
 <?php get_footer(); ?>

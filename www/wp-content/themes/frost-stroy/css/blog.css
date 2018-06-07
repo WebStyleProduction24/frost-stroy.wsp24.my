@@ -68,8 +68,11 @@
 	padding: 15px;
 }
 
-.post-excerpt h1{
+.post-excerpt h1, .post-excerpt h6{
 	color: #fff;	
+}
+
+.post-excerpt h1 {
 	font-size: 30px;
 	margin: 0;	
 }
@@ -115,3 +118,11 @@
 .post-excerpt-hover {
 	font-size: 12px;
 }
+
+.title-category-blog {
+	margin-top: 0;
+}
+/*
+.content-blog-post {
+	color: #000 !important;
+}*/

@@ -25,8 +25,8 @@
             </div>
             </div>
                 <div class="footer__right">
-                    <p>Спроектировано и реализовано</p>
-                    <p><a href="https://wsp24.ru/" rel="nofollow" target="_blank">Web Style Production</a></p>
+                    <p>Спроектировано и реализовано:</p>
+                    <p><a href="https://wsp24.ru/" rel="nofollow" target="_blank">Web Style Production 24</a></p>
                 </div>
             </div>
         </footer>
