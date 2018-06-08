@@ -21,11 +21,11 @@ function enqueue_styles() {
 add_action('wp_enqueue_scripts', 'enqueue_styles');
 
 function my_scripts_method() {
-    wp_deregister_script( 'jquery' );
-    wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js');
-    wp_enqueue_script( 'jquery' );
+	wp_deregister_script( 'jquery' );
+	wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js');
+	wp_enqueue_script( 'jquery' );
 }    
- 
+
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
 
 register_nav_menus(array(
@@ -117,50 +117,50 @@ function eg_setting_section_callback_function() {
 //
 function eg_setting_callback_function() {
 	echo '<input 
-		name="eg_setting_name" 
-		type="text"
-		placeholder="+7 (800) 800-00-00" 
-		value="' . get_option( 'eg_setting_name' ) . '"
-		value="1" 
-		class="code" 
+	name="eg_setting_name" 
+	type="text"
+	placeholder="+7 (800) 800-00-00" 
+	value="' . get_option( 'eg_setting_name' ) . '"
+	value="1" 
+	class="code" 
 	/>';
 }
 function eg_setting_callback_function2() {
 	echo '<input 
-		name="eg_setting_name2"  
-		type="text"
-		placeholder="ПН—ПТ, 9:00-22:00" 
-		value="' . get_option( 'eg_setting_name2' ) . '" 
-		class="code2"
-	 />';
+	name="eg_setting_name2"  
+	type="text"
+	placeholder="ПН—ПТ, 9:00-22:00" 
+	value="' . get_option( 'eg_setting_name2' ) . '" 
+	class="code2"
+	/>';
 }
 function eg_setting_callback_email() {
 	echo '<input 
-		name="email"  
-		type="text"
-		placeholder="admin@site.com" 
-		value="' . get_option( 'email' ) . '" 
-		class="code2"
-	 />';
+	name="email"  
+	type="text"
+	placeholder="admin@site.com" 
+	value="' . get_option( 'email' ) . '" 
+	class="code2"
+	/>';
 }
 function eg_setting_callback_adress() {
 	echo '<input 
-		name="adress"  
-		type="text"
-		placeholder="г. Воронеж" 
-		value="' . get_option( 'adress' ) . '" 
-		class="code2"
-	 />';
+	name="adress"  
+	type="text"
+	placeholder="г. Воронеж" 
+	value="' . get_option( 'adress' ) . '" 
+	class="code2"
+	/>';
 }
 
 function eg_setting_callback_maps() {
 	echo '<input 
-		name="maps"  
-		type="text"
-		placeholder="https://maps.yandex.ru/" 
-		value="' . get_option( 'maps' ) . '" 
-		class="code2"
-	 />';
+	name="maps"  
+	type="text"
+	placeholder="https://maps.yandex.ru/" 
+	value="' . get_option( 'maps' ) . '" 
+	class="code2"
+	/>';
 }
 
 
@@ -235,45 +235,45 @@ function eg_setting_section_callback_social() {
 //
 function eg_setting_callback_vk() {
 	echo '<input 
-		name="vk" 
-		type="text"
-		placeholder="https://vk.com/" 
-		value="' . get_option( 'vk' ) . '"
-		value="1" 
-		class="code" 
+	name="vk" 
+	type="text"
+	placeholder="https://vk.com/" 
+	value="' . get_option( 'vk' ) . '"
+	value="1" 
+	class="code" 
 	/>';
 }
 
 function eg_setting_callback_fb() {
 	echo '<input 
-		name="fb" 
-		type="text"
-		placeholder="https://facebook.com/" 
-		value="' . get_option( 'fb' ) . '"
-		value="1" 
-		class="code" 
+	name="fb" 
+	type="text"
+	placeholder="https://facebook.com/" 
+	value="' . get_option( 'fb' ) . '"
+	value="1" 
+	class="code" 
 	/>';
 }
 
 function eg_setting_callback_yt() {
 	echo '<input 
-		name="yt" 
-		type="text"
-		placeholder="https://youtube.com/" 
-		value="' . get_option( 'yt' ) . '"
-		value="1" 
-		class="code" 
+	name="yt" 
+	type="text"
+	placeholder="https://youtube.com/" 
+	value="' . get_option( 'yt' ) . '"
+	value="1" 
+	class="code" 
 	/>';
 }
 
 function eg_setting_callback_ig() {
 	echo '<input 
-		name="ig" 
-		type="text"
-		placeholder="https://instagram.com/" 
-		value="' . get_option( 'ig' ) . '"
-		value="1" 
-		class="code" 
+	name="ig" 
+	type="text"
+	placeholder="https://instagram.com/" 
+	value="' . get_option( 'ig' ) . '"
+	value="1" 
+	class="code" 
 	/>';
 }
 
@@ -317,7 +317,7 @@ function true_duplicate_post_as_draft(){
 	if (! ( isset( $_GET['post']) || isset( $_POST['post'])  || ( isset($_REQUEST['action']) && 'true_duplicate_post_as_draft' == $_REQUEST['action'] ) ) ) {
 		wp_die('Нечего дублировать!');
 	}
- 
+
 	/*
 	 * получаем ID оригинального поста
 	 */
@@ -326,7 +326,7 @@ function true_duplicate_post_as_draft(){
 	 * а затем и все его данные
 	 */
 	$post = get_post( $post_id );
- 
+
 	/*
 	 * если вы не хотите, чтобы текущий автор был автором нового поста
 	 * тогда замените следующие две строчки на: $new_post_author = $post->post_author;
@@ -334,12 +334,12 @@ function true_duplicate_post_as_draft(){
 	 */
 	$current_user = wp_get_current_user();
 	$new_post_author = $current_user->ID;
- 
+
 	/*
 	 * если пост существует, создаем его дубликат
 	 */
 	if (isset( $post ) && $post != null) {
- 
+
 		/*
 		 * массив данных нового поста
 		 */
@@ -358,12 +358,12 @@ function true_duplicate_post_as_draft(){
 			'to_ping'        => $post->to_ping,
 			'menu_order'     => $post->menu_order
 		);
- 
+
 		/*
 		 * создаем пост при помощи функции wp_insert_post()
 		 */
 		$new_post_id = wp_insert_post( $args );
- 
+
 		/*
 		 * присваиваем новому посту все элементы таксономий (рубрики, метки и т.д.) старого
 		 */
@@ -372,7 +372,7 @@ function true_duplicate_post_as_draft(){
 			$post_terms = wp_get_object_terms($post_id, $taxonomy, array('fields' => 'slugs'));
 			wp_set_object_terms($new_post_id, $post_terms, $taxonomy, false);
 		}
- 
+
 		/*
 		 * дублируем все произвольные поля
 		 */
@@ -387,8 +387,8 @@ function true_duplicate_post_as_draft(){
 			$sql_query.= implode(" UNION ALL ", $sql_query_sel);
 			$wpdb->query($sql_query);
 		}
- 
- 
+
+
 		/*
 		 * и наконец, перенаправляем пользователя на страницу редактирования нового поста
 		 */
@@ -399,7 +399,7 @@ function true_duplicate_post_as_draft(){
 	}
 }
 add_action( 'admin_action_true_duplicate_post_as_draft', 'true_duplicate_post_as_draft' );
- 
+
 /*
  * Добавляем ссылку дублирования поста для post_row_actions
  */
@@ -409,7 +409,7 @@ function true_duplicate_post_link( $actions, $post ) {
 	}
 	return $actions;
 }
- 
+
 add_filter( 'post_row_actions', 'true_duplicate_post_link', 10, 2 );
 
 
@@ -419,3 +419,67 @@ function new_excerpt_length($length) {
 	return 20;
 }
 add_filter('excerpt_length', 'new_excerpt_length');
+
+
+/* =======================================
+Custom Settings - functions
+=========================================*/
+
+class Walker_Category_Custom extends Walker {
+
+
+
+	public function start_el( &$output, $category, $depth = 0, $args = array(), $id= 0) {
+
+		global $category_id;
+
+		/** This filter is documented in wp-includes/category-template.php */
+		$cat_name = apply_filters('list_cats', esc_attr( $category->name ),	$category);
+		$cat_id = $category->cat_ID;
+		if ($cat_id == $category_id){
+			$link = '<a href="' . esc_url( get_term_link( $category ) ) . '" class="current-category">'. $cat_name . '</a>';
+		}else {
+			$link = '<a href="' . esc_url( get_term_link( $category ) ) . '">'. $cat_name . '</a>';
+		}
+		$output .= "\t$link<br />\n";
+	}
+
+}
+
+function walk_category_tree_custom() {
+	$args = func_get_args();
+	$walker = new Walker_Category_Custom;
+	return call_user_func_array( array( $walker, 'walk' ), $args );
+}
+
+function wp_list_categories_custom( $args = '' ) {
+	$defaults = array(
+		'child_of'            => 0,
+		'current_category'    => 0,
+		'depth'               => 0,
+		'echo'                => 1,
+		'exclude'             => '',
+		'exclude_tree'        => '',
+		'feed'                => '',
+		'feed_image'          => '',
+		'feed_type'           => '',
+		'hide_empty'          => 1,
+		'hide_title_if_empty' => false,
+		'hierarchical'        => true,
+		'order'               => 'ASC',
+		'orderby'             => 'name',
+		'show_count'          => 0,
+		'show_option_all'     => '',
+		'show_option_none'    => __( 'No categories' ),
+		'style'               => 'list',
+		'taxonomy'            => 'category',
+		'title_li'            => __( 'Categories' ),
+		'use_desc_for_title'  => 1,
+	);
+
+	$r = wp_parse_args( $args, $defaults );
+	$categories = get_categories( $r );
+	$depth = $r['depth'];
+	$output .= walk_category_tree_custom( $categories, $depth, $r );
+	echo $html = apply_filters( 'wp_list_categories_custom', $output, $args );
+}

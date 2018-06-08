@@ -14,6 +14,10 @@ video.loading {
   background: black url(/wp-content/uploads/2018/05/3-1.jpg) center center no-repeat;
 }
 
+.current-category, .current-post {
+	color: #00b95e !important;
+}
+
 .img-video {
 	display: none;
 	width: 100%;

@@ -1,9 +1,16 @@
-<?php get_header(); ?>
-<?php get_header('blog'); ?>
+<?php
+foreach( get_the_category() as $category_id ){
+	get_the_category($post->ID);
+	$category_id = $category_id->cat_ID;
+}
+
+get_header();
+get_header('blog');
+?>
 
 <main class="main-blog">
 	<div class="content">
-		<h1 class="title-category-blog"><?php foreach( get_the_category() as $category ){get_the_category(); echo $category->cat_name; }	?></h1>
+		<h1 class="title-category-blog"><?php foreach( get_the_category() as $category ){get_the_category(); echo $category->cat_name; }?></h1>
 		<div class="content-blog">
 			<?php
 			if (have_posts()):
@@ -15,7 +22,7 @@
 		</div>
 		<div class="sidebar">
 			<?php echo get_sidebar('category'); ?>
-			<?php echo get_sidebar('post'); ?>
+			<?php echo get_sidebar('post-category'); ?>
 			<?php echo get_sidebar(); ?>
 		</div>
 	</div>

@@ -1,13 +1,20 @@
 	<div class="category">
 		<p>Статьи по теме</p>
 
-		<?php
-		$cat_post = get_the_category();
-		$cat_ID = $cat_post->cat_ID;
-		if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<a class="permlinccat" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
-		<?php endwhile; else: ?>
-		Статей по теме нет
-	<?php endif; wp_reset_query(); ?>
+		<?php global $category_id;
+		$current_id = $post->ID;
 
-</div>
+		query_posts(array('cat' => $category_id, ));
+		if(have_posts()) : while(have_posts()): the_post(); {
+			$post_id = $post->ID;
+			if ($current_id == $post_id) {?>
+				<a class="permlinccat current-post" href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
+			<?php } else {?>
+				<a class="permlinccat" href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
+			<?php }
+		}
+		endwhile; endif;;
+		?>
+	</div>
+
+	
