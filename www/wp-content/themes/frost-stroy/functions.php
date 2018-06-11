@@ -24,6 +24,8 @@ function my_scripts_method() {
 	wp_deregister_script( 'jquery' );
 	wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js');
 	wp_enqueue_script( 'jquery' );
+	wp_register_script( 'fix', get_stylesheet_directory_uri().'/js/fix.js');
+	wp_enqueue_script( 'fix' );
 }    
 
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
@@ -441,7 +443,7 @@ class Walker_Category_Custom extends Walker {
 		}else {
 			$link = '<a href="' . esc_url( get_term_link( $category ) ) . '">'. $cat_name . '</a>';
 		}
-		$output .= "\t$link<br />\n";
+		$output .= "\t$link <br />\n";
 	}
 
 }
