@@ -5,6 +5,7 @@
 		'style'              => 'none',
 		'exclude'            => '1',
 		// 'show_count'         => 1,
-	) ); ?>
+	) ); 
+	?>
 
 </div>

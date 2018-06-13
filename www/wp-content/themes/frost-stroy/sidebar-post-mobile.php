@@ -3,7 +3,6 @@
 
 		<?php global $category_id;
 		$current_id = $post->ID;
-
 		query_posts(array('cat' => $category_id, ));
 		if(have_posts()) : while(have_posts()): the_post(); {
 			$post_id = $post->ID;
