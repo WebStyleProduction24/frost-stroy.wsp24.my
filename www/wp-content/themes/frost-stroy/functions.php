@@ -17,15 +17,19 @@ function enqueue_styles() {
 	wp_enqueue_style( 'blog-css');
 	wp_register_style('fonts', get_stylesheet_directory_uri().'/fonts/fonts.css');
 	wp_enqueue_style( 'fonts');
+	wp_register_style('fonts-blog', get_stylesheet_directory_uri().'/blog/css/fonts.css');
+	wp_enqueue_style( 'fonts-blog');
 }
 add_action('wp_enqueue_scripts', 'enqueue_styles');
 
 function my_scripts_method() {
 	wp_deregister_script( 'jquery' );
-	wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js');
+	wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js');
 	wp_enqueue_script( 'jquery' );
 	wp_register_script( 'fix', get_stylesheet_directory_uri().'/js/fix.js');
 	wp_enqueue_script( 'fix' );
+	wp_register_script( 'mobile-menu', get_stylesheet_directory_uri().'/js/mobile-menu.js');
+	wp_enqueue_script( 'mobile-menu' );
 }    
 
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );

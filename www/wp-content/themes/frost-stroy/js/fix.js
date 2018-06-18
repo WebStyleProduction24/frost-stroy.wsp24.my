@@ -1,33 +1,15 @@
 // var $ = jQuery.noConflict();
 
-var h_hght = 76; // высота шапки
-var h_mrg = 0;    // отступ когда шапка уже не видна
-
 $(function(){
-
-    var elem = $('.tablet');
-    var top = $(this).scrollTop();
-
-    var elem_tablet = $('.tablet').css('height');
-    var elem_margin = $('.tablet-content');
-
-    elem_margin.css('margin-top', elem_tablet);
-
-    if(top > h_hght){
-        elem.css('top', h_mrg);
-        elem.css('padding-top', '10px');
-    }           
-
-    $(window).scroll(function(){
-        top = $(this).scrollTop();
-
-        if (top+h_mrg < h_hght) {
-            elem.css('top', (h_hght-top));
-            elem.css('padding-top', '0');
-        } else {
-            elem.css('top', h_mrg);
-            elem.css('padding-top', '10px');
+    var h_hght = $('.header-blog').outerHeight(true) + 7;
+    $(window).scroll(function() {
+        var top = $(document).scrollTop();
+        if (top <= (h_hght-10)){
+            $(".tablet").css({top: '0', position: 'relative', 'padding-top': '0', 'border': 'none', '-webkit-box-shadow': 'none',
+    '-moz-box-shadow': 'none'});}
+        else {
+            $(".tablet").css({top: '0', position: 'fixed', 'padding-top': '10px', 'border-bottom': '3px solid #3b3273', '-webkit-box-shadow': '0 5px 15px 0 rgba(59, 50, 115, .15)',
+    '-moz-box-shadow': '0 5px 15px 0 rgba(59, 50, 115, .15)'});
         }
     });
-
 });

@@ -16,7 +16,7 @@
   get_header('blog'); ?>
 
   <main class="main-blog">
-    <div class="tablet">
+    <div class="tablet mobile">
       <?php
       echo get_sidebar('category-mobile');
       echo get_sidebar('post-mobile');

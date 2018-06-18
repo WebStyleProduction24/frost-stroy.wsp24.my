@@ -2,8 +2,10 @@
 <?php get_header('blog'); ?>
 
 <main class="main-blog">
-	<div class="tablet category-mobile">
-		<?php echo get_sidebar('category-mobile'); ?>
+	<div class="tablet category-mobile fix-table">
+		<div>
+			<?php echo get_sidebar('category-mobile'); ?>
+		</div>
 	</div>
 	<div class="content tablet-content">
 		<div class="content-blog">

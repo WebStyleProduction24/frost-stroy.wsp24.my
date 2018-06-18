@@ -1,5 +1,17 @@
 @charset "utf-8";
+/*
+.mobile {
+	top: 0 !important;
+}
+*/
 
+.ul-mobile {
+	display: block;
+}
+
+.main-blog .content {
+	padding-top: 10px;
+}
 .header-blog {
 	position: fixed;
 	width: 100%;
@@ -11,7 +23,7 @@
 	position: relative;
 	top: 67px;
 	margin-bottom: 67px;
-	padding: 25px 0;
+	padding-bottom: 25px;
 	overflow: hidden;
 }
 
@@ -119,10 +131,15 @@
 	font-size: 12px;
 }
 
-.title-category-blog {
+.title-category-blog, .main-blog .tablet-content {
 	margin-top: 0;
 }
 .tablet {
+	display: none;
+	height: 0;
+}
+
+#open, #open-post, #close-1, #close, #close-1-post, #close-post {
 	display: none;
 }
 
@@ -130,14 +147,15 @@
 
 	.tablet {
 		display: block;
+		height: auto;
 	}
 
 	.header-blog {
 		position: relative;
 		z-index: 0;
 	}
-	.sidebar, .tablet br, .title-category-blog {
-		display: none !important;
+	.content .sidebar, .tablet br, .title-category-blog {
+		display: none;
 	}
 	.content-blog {
 		width: 100%;
@@ -146,7 +164,7 @@
 
 	.main-blog .content {
 		padding: 0 10px;
-		margin-top: 51px;
+		/*margin-top: 51px;*/
 	}
 
 	.post-excerpt h1 {
@@ -154,14 +172,15 @@
 	}
 
 	.tablet {
-		/*padding-top: 10px;*/
+		/*top: 0;
+		padding-top: 10px;*/
 		margin: 0 auto;
 		width: 100% !important;
 		color: #3b3273;
 		text-align: center;
 		font-size: 14px;
 		z-index: 10; 
-		position: fixed;
+		/*position: fixed;*/
 		background-color: #fff;
 	}
 
@@ -182,5 +201,63 @@
 
 	.tablet .category {
 		margin-bottom: 10px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+	.post-blog {
+		width: 100%;
+	}
+
+	#open, #open-post {
+		display: inline;
+	}
+	.ul-mobile, .ul-mobile-post {
+		display: none;
+	}
+
+	.description {
+		width: 100%;
+	}	
+	.description a {
+		width: 100%;
+		text-align: center;
+	}	
+	.tablet br {
+		display: block;
+	}
+
+	.mobile .category {
+		float: left;
+		width: 50%;
+	}
+
+	.tablet p {
+		font-size: 12px;
+	}
+
+	.mobile {
+		text-align: center;
+		padding: 0 10px;
+	}
+	.mobile div {
+		margin: 0 auto;
+	}
+
+	.mobile .category:last-child p{
+		text-align: right;
+	}
+
+	.mobile .category:first-child p{
+		text-align: left;
+	}
+
+	.mobile .category:last-child p a {
+		margin-right: 0;
+	}
+
+	.tablet-content {
+		clear: both;
 	}
 }
