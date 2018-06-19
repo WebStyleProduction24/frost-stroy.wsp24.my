@@ -66,9 +66,9 @@ body {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 30px;
     line-height: 1.167;
-    color: #3b3273;
+    color: #004568;
     font-weight: 700;
 }
 
@@ -79,7 +79,7 @@ h1, h6{
 .header-land {
     -webkit-box-shadow: 0 5px 15px 0 rgba(59, 50, 115, .15);    
     -moz-box-shadow: 0 5px 15px 0 rgba(59, 50, 115, .15);
-    border-bottom: #3b3273 solid 3px;
+    border-bottom: #004568 solid 3px;
     overflow: hidden;
 }
 
@@ -124,7 +124,7 @@ h1, h6{
 }
 
 .nav a, .left a {
-    color: #3b3273;
+    color: #004568;
     -webkit-transition: all .2s;
     -o-transition: all .2s;
     -moz-transition: all .2s;
@@ -132,7 +132,7 @@ h1, h6{
 }
 
 .left a:visited {
-    color: #3b3273;
+    color: #004568;
 }
 .nav a:hover, .left a:hover {
     color: #00b95e
@@ -147,6 +147,6 @@ h1, h6{
 .tel a {
     font-size: 18px;
     font-weight: 700;
-    color: #3b3273;
+    color: #004568;
 }
 

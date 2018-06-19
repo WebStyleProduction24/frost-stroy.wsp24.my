@@ -72,6 +72,7 @@
 
 .post-excerpt img {
 	width: 100%;
+	height:100%;
 }
 
 .title-post-nohover {
@@ -99,6 +100,7 @@
 
 .post-blog {
 	width: 50%;
+	float: left;
 }
 
 .post-blog:hover .title-post-nohover {

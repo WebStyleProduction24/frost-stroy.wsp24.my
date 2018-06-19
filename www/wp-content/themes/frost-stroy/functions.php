@@ -30,6 +30,8 @@ function my_scripts_method() {
 	wp_enqueue_script( 'fix' );
 	wp_register_script( 'mobile-menu', get_stylesheet_directory_uri().'/js/mobile-menu.js');
 	wp_enqueue_script( 'mobile-menu' );
+	wp_register_script( 'script', get_stylesheet_directory_uri().'/js/script.js');
+	wp_enqueue_script( 'script' );
 }    
 
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
